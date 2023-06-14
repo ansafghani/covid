@@ -1,0 +1,344 @@
+* {
+    width: auto;
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(230, 222, 212);
+    overflow-y: scroll;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    width: 102%;
+    background-image: linear-gradient(-224deg, #971b1f, #591c1c);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: inherit;
+    position: fixed;
+    margin-left: -8px;
+    margin-right: -8px;
+    height: 88px;
+    z-index: 10;
+}
+
+.Heading {
+    padding-top: 28px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    flex-basis: 58%;
+    max-width: 75%;
+}
+
+.Login {
+    padding-top: 17px;
+    padding-left: 40px;
+    flex-basis: 42%;
+    margin-left: -100px;
+}
+
+.Login a {
+    color: #ffffff;
+}
+
+.Login i {
+    color: #000000;
+}
+
+.Login button {
+    width: 100px;
+    padding: 9px;
+    padding-bottom: 10px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    padding-left: 100px;
+    color: #ffffff;
+    background-color: #ffffff00;
+    cursor: pointer;
+    letter-spacing: 2px;
+    float: right;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.Heading img {
+    width: auto;
+    height: 40px;
+}
+
+.fakeheader {
+    height: 88px;
+}
+
+/* ====================================================
+MAIN BODY
+==================================================== */
+
+.Homebanner {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #e3b05f no-repeat top;
+    background-size: auto;
+    height: 700px;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    outline: 0;
+    box-sizing: border-box;
+    color: #72727d;
+}
+
+.HomebannerImage {
+    /* background-image: url(../ASSESTS/test3.jpg); */
+    width: 100%;
+    height: 700px;
+    position: absolute;
+    object-fit: cover;
+    object-position: top;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+}
+
+ 
+ /* @media only screen and (max-width: 500px){
+ 
+    .example{
+       background-image: url("../ASSESTS/test3.1.jpg");
+    }
+ } */
+
+
+
+.HomebannerText {
+    font-size: 46px;
+    line-height: 55px;
+    text-shadow: 1px 1px 1px #ffffff;
+    padding: 400px 0 140px;
+    align-self: flex-end;
+    z-index: 1;
+    color: #c50101;
+    text-align: center;
+}
+/* .HomebannerText1{
+    font-size: 46px;
+    line-height: 55px;
+    text-shadow: 1px 1px 1px #000000;
+    padding: 400px 10px 224px;
+    align-self: flex-end;
+    z-index: 1;
+    color: #ffffff;
+    text-align: center;
+} */
+
+.donatenowButton button {
+    background-color: #ff9292;
+    color: #ffffff;
+    border: 0;
+    padding: 16px 40px;
+    font-size: 20px;
+    line-height: 28px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.donatenowButton button:hover {
+    color: #000000;
+    background-color: #d3474c;
+}
+
+.WhyChoose {
+    margin-top: 90px;
+    word-spacing: 3px;
+    margin-left: 8%;
+    margin-right: 8%;
+    text-align: center;
+    color: #51505d;
+    /* font-size: 1vw; */
+}
+
+.WhyChoose .far {
+    color: #971b1f;
+    font-size: 55px;
+}
+
+.WhyChoose .fas {
+    color: #971b1f;
+    font-size: 55px;
+}
+
+.WhyChoose span {
+    font-family: 'Audiowide';
+    /* font-size: 2vw; */
+}
+
+.WhyChoose hr {
+    width: 15%;
+    color: rgba(83, 37, 37, 0.315);
+}
+
+.WhyChoose0 {
+    margin-top: 50px;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-right: -8px;
+    margin-left: -8px;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.WhyChoose1 {
+    padding-right: 0px;
+    flex-basis: auto;
+    max-width: 100%;
+    padding-top: 35px;
+    margin-bottom: 35px;
+}
+
+.WhyChoose1 style {
+    float: right;
+}
+
+.WhyChoose2 {
+    flex-basis: auto;
+    max-width: 100%;
+    padding-top: 35px;
+    margin-bottom: 35px;
+}
+
+.WhyChoose3 {
+    flex-basis: auto;
+    max-width: 100%;
+    padding-top: 35px;
+    margin-bottom: 35px;
+}
+
+.matchIMG {
+    background: rgba(0, 0, 0, 0);
+}
+
+/* 
+==========================================================
+FOOTER
+========================================================== */
+
+footer h2 {
+    font-size: 18px;
+}
+
+footer {
+    /* background-image: linear-gradient(-224deg, #971b1f, #692454); */
+    background-image: linear-gradient(-224deg, #971b1f, #591c1c);
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 30px 50px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    color: rgb(255, 255, 255);
+    /* margin-bottom: -20px; */
+}
+
+footer .FooterContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+footer a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+}
+
+footer li {
+    list-style: none;
+    padding-top: 5px;
+}
+
+footer i {
+    margin-right: 5px;
+}
+
+.AboutUsContainer {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 33%;
+}
+
+.FollowUs .social {
+    border-radius: 5px;
+    transition: 0.3s;
+    padding-left: 0;
+    font-size: 25px;
+    color: #ffffff;
+    letter-spacing: 3px;
+}
+
+.HelpAndSupport {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 22%;
+}
+
+.Information {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 22%;
+}
+
+.Others {
+    position: relative;
+    padding-right: 20px;
+    padding-left: 20px;
+    width: 22%;
+}
+
+.FooterList {
+    padding-left: 10px;
+}
+
+@media (max-width:700px) {
+    footer .FooterContainer {
+        flex-direction: column;
+    }
+    .AboutUsContainer {
+        width: auto;
+    }
+    .Information {
+        width: auto;
+        margin-top: 20px;
+    }
+    .HelpAndSupport {
+        width: auto;
+        margin-top: 20px;
+    }
+    .Others {
+        margin-top: 20px;
+        width: auto;
+    }
+}

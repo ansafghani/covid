@@ -1,0 +1,166 @@
+* {
+    width: auto;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 500px;
+    max-width: 100%;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(230, 222, 212);
+    overflow-y: scroll;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ========================================== */
+
+/* =========HEADER====================== */
+
+/* ========================================== */
+
+header {
+    width: 102%;
+    background-image: linear-gradient(-224deg, #971b1f, #692454);
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: inherit;
+    position: fixed;
+    margin-left: -8px;
+    margin-right: -8px;
+    height: 88px;
+    z-index: 100;
+}
+
+.Heading {
+    padding-top: 28px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    flex-basis: 58%;
+    max-width: 75%;
+}
+
+.Login {
+    padding-top: 17px;
+    padding-left: 40px;
+    flex-basis: 42%;
+    margin-left: -100px;
+}
+
+.Login a {
+    color: #ffffff;
+}
+
+.Login i {
+    color: #000000;
+}
+
+.Login button {
+    width: 100px;
+    padding: 9px;
+    padding-bottom: 10px;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+    padding-left: 66px;
+    color: #ffffff;
+    background-color: #ffffff00;
+    cursor: pointer;
+    letter-spacing: 2px;
+    float: right;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.Heading img {
+    width: auto;
+    height: 30px;
+}
+
+.fakeheader {
+    height: 93px;
+    background-color: rgb(230, 222, 212);
+}
+
+/* ============================================
+==================MAIN BODY==============
+============================================ */
+
+.Mainbody {
+    display: flex;
+    max-width: 100%;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.SortBar {
+    position: fixed;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+    /* background-color: rgb(202, 224, 243); */
+    background-image: linear-gradient(-224deg, #971b1f, #692454);
+    color: #ffffff;
+    z-index: 1000;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: inherit;
+    padding: 21px 10px 1px 20px;
+    height: 88px;
+    justify-content: center;
+    font-size: large;
+    font-weight: 600;
+}
+
+.SortBar option {
+    width: 17vw;
+}
+
+.select {
+    border-radius: 20px;
+    width: 70%;
+    border: 2px solid rgb(20, 20, 20);
+    outline: none;
+    background-color: rgb(230, 222, 212);
+}
+
+.Bycast {
+    position: relative;
+    flex-basis: 25%;
+}
+
+.Bystate {
+    position: relative;
+    flex-basis: 25%;
+}
+
+.Byage {
+    position: relative;
+    flex-basis: 21%;
+}
+
+.SortButton {
+    position: relative;
+    flex-basis: 25%;
+}
+
+.SortBar button{
+    border-radius: 20px;
+    background-color: rgba(255, 255, 255, 0) ;
+    outline: none;
+    /* border: none; */
+    cursor: pointer;
+    font-weight: 600;
+    color: #ffffff;
+    letter-spacing: 2px;
+}
+
+.Profilelist {
+    margin-top: 150px;
+    position: relative;
+}

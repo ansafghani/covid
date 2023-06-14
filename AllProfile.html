@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="covidtablogo1.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoviDoNATION | Browse Items</title>
+    <!-- <link rel="stylesheet" href="allprofiel.css"> -->
+    <style type="text/css">
+        * {
+            width: auto;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin-top: 500px;
+            max-width: 100%;
+            overflow: hidden;
+            margin: 0;
+            padding: 0;
+            background-color: rgb(230, 222, 212);
+            overflow-y: scroll;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* ========================================== */
+
+        /* =========HEADER====================== */
+
+        /* ========================================== */
+
+        header {
+            width: 102%;
+            background-image: linear-gradient(-224deg, #971b1f, #692454);
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: inherit;
+            position: fixed;
+            margin-left: -8px;
+            margin-right: -8px;
+            height: 88px;
+            z-index: 100;
+        }
+
+        .Heading {
+            padding-top: 28px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            flex-basis: 58%;
+            max-width: 75%;
+        }
+
+        .Login {
+            padding-top: 17px;
+            padding-left: 40px;
+            flex-basis: 42%;
+            margin-left: -100px;
+        }
+
+        .Login a {
+            color: #ffffff;
+        }
+
+        .Login i {
+            color: #000000;
+        }
+
+        .Login button {
+            width: 100px;
+            padding: 9px;
+            padding-bottom: 10px;
+            border: none;
+            outline: none;
+            transition: 0.3s;
+            padding-left: 66px;
+            color: #ffffff;
+            background-color: #ffffff00;
+            cursor: pointer;
+            letter-spacing: 2px;
+            float: right;
+            font-size: 16px;
+            font-weight: 600;
+        }
+
+        .Heading img {
+            width: auto;
+            height: 40px;
+        }
+
+        .fakeheader {
+            height: 67px;
+            background-color: rgb(230, 222, 212);
+        }
+
+        /* ============================================
+==================MAIN BODY==============
+============================================ */
+
+        .Mainbody {
+            display: flex;
+            max-width: 100%;
+            flex-wrap: wrap;
+            flex-direction: column;
+        }
+
+        .SortBar {
+            position: fixed;
+            width: 100%;
+            box-shadow: rgba(0, 0, 0, 0.2) 0px 2px 2px;
+            /* background-color: rgb(202, 224, 243); */
+            background-image: linear-gradient(-224deg, #971b1f, #692454);
+            color: #ffffff;
+            z-index: 1000;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: inherit;
+            padding: 21px 10px 1px 20px;
+            height: 88px;
+            justify-content: center;
+            font-size: large;
+            font-weight: 600;
+        }
+
+        .SortBar option {
+            width: 17vw;
+        }
+
+        .select {
+            border-radius: 20px;
+            width: 70%;
+            border: 2px solid rgb(20, 20, 20);
+            outline: none;
+            background-color: rgb(230, 222, 212);
+        }
+
+        .Bycast {
+            position: relative;
+            /* flex-basis: 25%; */
+        }
+
+
+        .SortButton {
+            position: relative;
+            /* flex-basis: 25%; */
+        }
+
+        .SortBar button {
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0);
+            outline: none;
+            /* border: none; */
+            cursor: pointer;
+            font-weight: 600;
+            color: #ffffff;
+            letter-spacing: 2px;
+        }
+
+        .Profilelist {
+            margin-top: 150px;
+            position: relative;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .Profile{
+            padding-left: 100px;
+            margin: 40px 40px 40px 40px;
+        }
+        .Profiledetails{
+            display: flex;
+        }
+        li{
+            list-style: none;
+            margin-bottom: 5px;
+        }
+        .Profile button{
+            background-color: #cb8c55;
+            color: #ffffff;
+            /* border: none; */
+            outline: none;
+            letter-spacing: 1px;
+            cursor: pointer;
+            margin-left: 98px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="Heading">
+            <a href="index.html"><img src="covidlogo1.png" alt="Soulmate.com"></a>
+        </div>
+
+        <div class="Login">
+            <button type="button"><a href="loginco.html">Login </a></button>
+            <i class="fas fa-ellipsis"></i>
+            <button type="button"><a href="register.html">Register</a></button>
+        </div>
+    </header>
+
+    <div class="fakeheader"> </div>
+
+    <div class="Mainbody">
+        <div class="SortBar">
+
+
+            <div class="Bystate">
+                <label>State :-</label> <select name="State" class="select">
+                    <option>-</option>
+                    <option value="Andhra Pradesh">Andhra Pradesh</option>
+                    <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                    <option value="Assam">Assam</option>
+                    <option value="Bihar">Bihar</option>
+                    <option value="Chhattisgarh">Chhattisgarh</option>
+                    <option value="Goa">Goa</option>
+                    <option value=" Gujarat">Gujarat</option>
+                    <option value="Haryana">Haryana</option>
+                    <option value="Himachal Pradesh">Himachal Pradesh</option>
+                    <option value="Jharkhand">Jharkhand</option>
+                    <option value="Karnataka ">Karnataka</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Madhya Pradesh">Madhya Pradesh</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Manipur">Manipur</option>
+                    <option value=" Meghalaya">Meghalaya</option>
+                    <option value="Mizoram">Mizoram</option>
+                    <option value="Nagaland">Nagaland</option>
+                    <option value=" Odisha">Odisha</option>
+                    <option value="Punjab">Punjab</option>
+                    <option value="Rajasthan">Rajasthan</option>
+                    <option value="Sikkim">Sikkim</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Telangana">Telangana</option>
+                    <option value="Tripura">Tripura</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                    <option value=" Uttarakhand">Uttarakhand</option>
+                    <option value="West Bengal">West Bengal</option>
+                    <option value="Andaman and Nicobar Islands">Andaman and
+                        Nicobar Islands</option>
+                    <option value="Chandigarh">Chandigarh</option>
+                    <option value="Dadra & Nagar Haveli and Daman & Diu">Dadra
+                        & Nagar Haveli and Daman & Diu</option>
+                    <option value="Delhi ">Delhi</option>
+                    <option value=" Jammu and Kashmir">Jammu and Kashmir</option>
+                    <option value="Lakshadweep">Lakshadweep</option>
+                    <option value=" Puducherry">Puducherry</option>
+                    <option value=" Ladakh">Ladakh</option>
+                </select>
+            </div>
+
+            <div class="SortButton">
+                <button type="button">Search</button>
+            </div>
+
+        </div>
+        <div class="Profilelist">
+
+            <div class="Profile">
+
+
+                <div class="Profiledetails">
+                    <div class="details">
+                        <ul>
+                            <li>
+                                <div id="Alltext">Product Name:</div>
+
+                            </li>
+                            <li>
+                                <div id="Alltext">State:</div>
+
+                            </li>
+
+                            <li>
+                                <div id="Alltext">City</div>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="detailsFromDB">
+                        <ul>
+                            <li>
+                                <div class="text">XXXXXXXX</div>
+                            </li>
+
+
+
+                            <li>
+                                <div class="state">XXXXXXX</div>
+                            </li>
+
+
+                            <li>
+
+                                <div class="city">XXXXXXX</div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div> <a href="profilepage.html"><button type="submit">Know more</button></a>
+            </div>
+            <div class="Profile">
+
+
+                <div class="Profiledetails">
+                    <div class="details">
+                        <ul>
+                            <li>
+                                <div id="Alltext">Product Name:</div>
+
+                            </li>
+                            <li>
+                                <div id="Alltext">State:</div>
+
+                            </li>
+
+                            <li>
+                                <div id="Alltext">City</div>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="detailsFromDB">
+                        <ul>
+                            <li>
+                                <div class="text">XXXXXXXX</div>
+                            </li>
+
+
+
+                            <li>
+                                <div class="state">XXXXXXX</div>
+                            </li>
+
+
+                            <li>
+
+                                <div class="city">XXXXXXX</div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div> <a href="profilepage.html"><button type="submit">Know more</button></a>
+            </div>
+            <div class="Profile">
+
+
+                <div class="Profiledetails">
+                    <div class="details">
+                        <ul>
+                            <li>
+                                <div id="Alltext">Product Name:</div>
+
+                            </li>
+                            <li>
+                                <div id="Alltext">State:</div>
+
+                            </li>
+
+                            <li>
+                                <div id="Alltext">City</div>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="detailsFromDB">
+                        <ul>
+                            <li>
+                                <div class="text">XXXXXXXX</div>
+                            </li>
+
+
+
+                            <li>
+                                <div class="state">XXXXXXX</div>
+                            </li>
+
+
+                            <li>
+
+                                <div class="city">XXXXXXX</div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div> <a href="profilepage.html"><button type="submit">Know more</button></a>
+            </div>
+            <div class="Profile">
+
+
+                <div class="Profiledetails">
+                    <div class="details">
+                        <ul>
+                            <li>
+                                <div id="Alltext">Product Name:</div>
+
+                            </li>
+                            <li>
+                                <div id="Alltext">State:</div>
+
+                            </li>
+
+                            <li>
+                                <div id="Alltext">City</div>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="detailsFromDB">
+                        <ul>
+                            <li>
+                                <div class="text">XXXXXXXX</div>
+                            </li>
+
+
+
+                            <li>
+                                <div class="state">XXXXXXX</div>
+                            </li>
+
+
+                            <li>
+
+                                <div class="city">XXXXXXX</div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div> <a href="profilepage.html"><button type="submit">Know more</button></a>
+            </div>
+            <div class="Profile">
+
+
+                <div class="Profiledetails">
+                    <div class="details">
+                        <ul>
+                            <li>
+                                <div id="Alltext">Product Name:</div>
+
+                            </li>
+                            <li>
+                                <div id="Alltext">State:</div>
+
+                            </li>
+
+                            <li>
+                                <div id="Alltext">City</div>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="detailsFromDB">
+                        <ul>
+                            <li>
+                                <div class="text">XXXXXXXX</div>
+                            </li>
+
+
+
+                            <li>
+                                <div class="state">XXXXXXX</div>
+                            </li>
+
+
+                            <li>
+
+                                <div class="city">XXXXXXX</div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div> <a href="profilepage.html"><button type="submit">Know more</button></a>
+            </div>
+            <div class="Profile">
+
+
+                <div class="Profiledetails">
+                    <div class="details">
+                        <ul>
+                            <li>
+                                <div id="Alltext">Product Name:</div>
+
+                            </li>
+                            <li>
+                                <div id="Alltext">State:</div>
+
+                            </li>
+
+                            <li>
+                                <div id="Alltext">City</div>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="detailsFromDB">
+                        <ul>
+                            <li>
+                                <div class="text">XXXXXXXX</div>
+                            </li>
+
+
+
+                            <li>
+                                <div class="state">XXXXXXX</div>
+                            </li>
+
+
+                            <li>
+
+                                <div class="city">XXXXXXX</div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div> <a href="profilepage.html"><button type="submit">Know more</button></a>
+            </div>
+            <div class="Profile">
+
+
+                <div class="Profiledetails">
+                    <div class="details">
+                        <ul>
+                            <li>
+                                <div id="Alltext">Product Name:</div>
+
+                            </li>
+                            <li>
+                                <div id="Alltext">State:</div>
+
+                            </li>
+
+                            <li>
+                                <div id="Alltext">City</div>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="detailsFromDB">
+                        <ul>
+                            <li>
+                                <div class="text">XXXXXXXX</div>
+                            </li>
+
+
+
+                            <li>
+                                <div class="state">XXXXXXX</div>
+                            </li>
+
+
+                            <li>
+
+                                <div class="city">XXXXXXX</div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div> <a href="profilepage.html"><button type="submit">Know more</button></a>
+            </div>
+            <div class="Profile">
+
+
+                <div class="Profiledetails">
+                    <div class="details">
+                        <ul>
+                            <li>
+                                <div id="Alltext">Product Name:</div>
+
+                            </li>
+                            <li>
+                                <div id="Alltext">State:</div>
+
+                            </li>
+
+                            <li>
+                                <div id="Alltext">City</div>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="detailsFromDB">
+                        <ul>
+                            <li>
+                                <div class="text">XXXXXXXX</div>
+                            </li>
+
+
+
+                            <li>
+                                <div class="state">XXXXXXX</div>
+                            </li>
+
+
+                            <li>
+
+                                <div class="city">XXXXXXX</div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div> <a href="profilepage.html"><button type="submit">Know more</button></a>
+            </div>
+            <div class="Profile">
+
+
+                <div class="Profiledetails">
+                    <div class="details">
+                        <ul>
+                            <li>
+                                <div id="Alltext">Product Name:</div>
+
+                            </li>
+                            <li>
+                                <div id="Alltext">State:</div>
+
+                            </li>
+
+                            <li>
+                                <div id="Alltext">City</div>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="detailsFromDB">
+                        <ul>
+                            <li>
+                                <div class="text">XXXXXXXX</div>
+                            </li>
+
+
+
+                            <li>
+                                <div class="state">XXXXXXX</div>
+                            </li>
+
+
+                            <li>
+
+                                <div class="city">XXXXXXX</div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div> <a href="profilepage.html"><button type="submit">Know more</button></a>
+            </div>
+            <div class="Profile">
+
+
+                <div class="Profiledetails">
+                    <div class="details">
+                        <ul>
+                            <li>
+                                <div id="Alltext">Product Name:</div>
+
+                            </li>
+                            <li>
+                                <div id="Alltext">State:</div>
+
+                            </li>
+
+                            <li>
+                                <div id="Alltext">City</div>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="detailsFromDB">
+                        <ul>
+                            <li>
+                                <div class="text">XXXXXXXX</div>
+                            </li>
+
+
+
+                            <li>
+                                <div class="state">XXXXXXX</div>
+                            </li>
+
+
+                            <li>
+
+                                <div class="city">XXXXXXX</div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div> <a href="profilepage.html"><button type="submit">Know more</button></a>
+            </div>
+            <div class="Profile">
+
+
+                <div class="Profiledetails">
+                    <div class="details">
+                        <ul>
+                            <li>
+                                <div id="Alltext">Product Name:</div>
+
+                            </li>
+                            <li>
+                                <div id="Alltext">State:</div>
+
+                            </li>
+
+                            <li>
+                                <div id="Alltext">City</div>
+
+                            </li>
+
+                        </ul>
+                    </div>
+                    <div class="detailsFromDB">
+                        <ul>
+                            <li>
+                                <div class="text">XXXXXXXX</div>
+                            </li>
+
+
+
+                            <li>
+                                <div class="state">XXXXXXX</div>
+                            </li>
+
+
+                            <li>
+
+                                <div class="city">XXXXXXX</div>
+                            </li>
+
+                        </ul>
+                    </div>
+                </div> <a href="profilepage.html"><button type="submit">Know more</button></a>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+
+
+<footer>
+
+</footer>
+
+</html>
